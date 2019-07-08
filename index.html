@@ -136,13 +136,15 @@
                      <p><b>PHP Programmer</b></p>
                      <p>January 2019 - Present</p>
                   </div>
-                  <div class="col-xs-12 col-sm-8 col-md-7 col-print-12" style="text-align: left">
+                  <div class="col-xs-12 col-sm-8 col-md-7 col-print-12 custom_align">
+                     <ul>
                      - Transforming software designs and specifications into high
                      <br>functioning code in the appropriate language
                      <br>
                      - Debug programs by testing for and fixing errors
                      <br>
                      - Path of team RVsitebuilder
+                     </ul>>
                   </div>
                </div>
                <br>
@@ -153,7 +155,7 @@
                      <p><b>Programmer</b></p>
                      <p>September 2017 - December 2018</p>
                   </div>
-                  <div class="col-xs-12 col-sm-8 col-md-7 col-print-12" style="text-align: left">
+                  <div class="col-xs-12 col-sm-8 col-md-7 col-print-12 custom_align">
                      - Transforming software designs and specifications into high
                      <br>functioning code in the appropriate
                      language
@@ -238,5 +240,16 @@
    <script type="text/javascript" src="js/contact_me.js"></script>
    <script type="text/javascript" src="js/main.js"></script>
 </body>
-
 </html>
+
+<script>
+   $(document).ready(function(){
+      if(window.screen.availWidth < 800){
+         $(".custom_align").css("text-align",'center');
+      }
+      else{
+         $(".custom_align").css("text-align",'left');
+      }
+   })
+</script>
+
